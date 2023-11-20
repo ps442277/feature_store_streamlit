@@ -1,7 +1,9 @@
+import subprocess
+subprocess.call(['./setup.sh'], shell=True)
+
 import streamlit as st
 import yaml
 from ds_final import generateQuery
-import subprocess
 
 if 'yaml_data' not in st.session_state:
     st.session_state.yaml_data = {"query": [],"subquery":dict()}
