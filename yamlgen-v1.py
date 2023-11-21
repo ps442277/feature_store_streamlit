@@ -1,5 +1,8 @@
 import subprocess
+
+print("Calling setup.sh")
 subprocess.call(['./setup.sh'], shell=True)
+print("Setup.sh completed")
 
 import streamlit as st
 import yaml
